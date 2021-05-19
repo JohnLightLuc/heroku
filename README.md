@@ -12,16 +12,20 @@
   
       web: gunicorn nom_projet.wsgi --log-file -
       
-6 -   Créer le fichier runtime.txt a la racine de votre projet et ajouter la version de python
+ 6 - install Gunicorn
+  
+      $ pip install gunicorn
+      
+7 -   Créer le fichier runtime.txt a la racine de votre projet et ajouter la version de python
 
       python-3.6.12
       
       
-7 - Ajouter requirements.txt contenant les dependances de votre projet
+8 - Ajouter requirements.txt contenant les dependances de votre projet
 
       $ pip freeze > requirements.txt
       
-8 - Commandes pour deployer votre projet 
+9 - Commandes pour deployer votre projet 
 
     $ heroku login (for login)
     
@@ -34,7 +38,7 @@
       Initializing repository, done.
        updating 'refs/heads/master'
 
- 9 - Configure Postgres on your project
+ 10 - Configure Postgres on your project
  
    a- Install Dj database
    

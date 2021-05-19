@@ -34,7 +34,27 @@
       Initializing repository, done.
        updating 'refs/heads/master'
 
-
+ 9 - Configure Postgres on your project
+ 
+   a- Install Dj database
+   
+       $ pip install dj-database-url
+       
+   b- Install Psycopg2
+  
+    $ pip install psycopg2
+  
+  c- Configurate our url
+  
+    postgres://My_USER:My_PASSWORD@My_HOST:PORT/bd_NAME
+    
+   d- Settings.py [Detail](https://pypi.org/project/dj-database-url/)
+   
+    import dj_database_url
+    DATABASES['default'] = dj_database_url.config()
+              
+      
+          
     
 
 

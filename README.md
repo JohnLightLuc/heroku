@@ -61,7 +61,7 @@
   
  ## Afficher les logs en console
  
-      $ heroku --app [my_app_name] logs --tail
+      $ heroku logs --tail --app [my_app_name] 
           
     
 

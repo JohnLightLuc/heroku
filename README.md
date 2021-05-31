@@ -56,8 +56,12 @@
    
     import dj_database_url
     DATABASES['default'] = dj_database_url.config()
-              
-      
+    
+    
+  
+ ## Afficher les logs en console
+ 
+      $ heroku --app [my_app_name] logs --tail
           
     
 
